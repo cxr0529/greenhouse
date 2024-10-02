@@ -20,10 +20,14 @@ footer{
 
 .row {width: 100%;}
 
-.christmas {
+.gallery {
 	border: 1px solid black;
 	margin-top: 15px;
 	margin-bottom: 10px;
+}
+
+.description {
+	text-align: center;
 }
 
 #sunshine{
@@ -71,6 +75,11 @@ footer{
 #easter {
 	text-align: center;
 	color: #9386e6;
+}
+
+#fall {
+	text-align: center;
+	color: #d27300;
 }
 
 /***Desktop***/
