@@ -30,6 +30,12 @@ footer{
 	text-align: center;
 }
 
+.carousel-inner .carousel-item {
+	height: 500px;
+	width: 375px;
+	margin: auto;
+}
+
 #sunshine{
 	text-align: center;
 	background-color: green;
@@ -43,10 +49,6 @@ footer{
 	background-color: black;
 	color: ghostwhite;
 	text-align: center;
-}
-.carousel .carousel-item {
-  height: 500px;
-/*  width: 375px;*/
 }
 
 #offer{
