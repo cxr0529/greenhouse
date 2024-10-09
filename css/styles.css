@@ -36,6 +36,9 @@ footer{
 	margin: auto;
 }
 
+.carousel { overflow: hidden; }
+.carousel-item { overflow: hidden; }
+
 #sunshine{
 	text-align: center;
 	background-color: green;
