@@ -33,6 +33,12 @@ var fall = "snippets/fall.html";
 var christmas = "snippets/christmas.html";
 
 
+// Convenience function for inserting innerHTML for 'select'
+  var insertHtml = function (selector, html) {
+    var targetElem = document.querySelector(selector);
+    targetElem.innerHTML = html;
+  };
+  
 // Show loading icon inside element identified by 'selector'.
 var showLoading = function (selector) {
   var html = "<div class='text-center'>";
@@ -54,7 +60,7 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
-//function to load snippet page
+/*//function to load history page
 gh.loadHistory = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -136,7 +142,7 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
-};
+};*/
 
 global.$gh = gh;
 
