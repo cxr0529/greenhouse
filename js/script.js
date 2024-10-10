@@ -62,7 +62,10 @@ $ajaxUtils.sendGetRequest(
 //function to load history page
 gh.loadHistory = function () {
   showLoading("#main-content");
-  $ajaxUtils.sendGetRequest(history, false);
+  $ajaxUtils.sendGetRequest(history, 
+    function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      }, false);
 };
 
 global.$gh = gh;
