@@ -83,11 +83,59 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-//function to load snippet page
-gh.loadPage = function (page) {
+//function to load easter page
+gh.loadEaster = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  page,
+  easter,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load spring page
+gh.loadSpring = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  spring,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load summer page
+gh.loadSummer = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  summer,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load fall page
+gh.loadFall = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  fall,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load christmas page
+gh.loadChristmas = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  christmas,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
