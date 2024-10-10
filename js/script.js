@@ -71,6 +71,18 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
+//function to load offer page
+gh.loadOffer = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  offer,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
 global.$gh = gh;
 
 })(window);
