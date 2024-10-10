@@ -60,7 +60,7 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
-/*//function to load history page
+//function to load history page
 gh.loadHistory = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -142,7 +142,7 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
-};*/
+};
 
 global.$gh = gh;
 
