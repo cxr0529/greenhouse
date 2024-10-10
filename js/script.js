@@ -59,15 +59,10 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
-// function for loading each snippet
-function loadPage(selector) {
+//function to load history page
+gh.loadHistory = function () {
   showLoading("#main-content");
-  $ajaxUtils.sendGetRequest(selector,
-    unction (responseText) {
-    document.querySelector("#main-content")
-      .innerHTML = responseText;
-  },
-  false);
+  $ajaxUtils.sendGetRequest(history);
 };
 
 global.$gh = gh;
