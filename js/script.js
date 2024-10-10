@@ -24,6 +24,13 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var gh = {};
 
 var homeHtml = "snippets/home.html";
+var history = "snippets/history.html";
+var offer = "snippets/offer.html";
+var easter = "snippets/easter.html";
+var spring = "snippets/spring.html";
+var summer = "snippets/summer.html";
+var fall = "snippets/fall.html";
+var christmas = "snippets/christmas.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -52,6 +59,16 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
+// function for loading each snippet
+function loadPage(selector) {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(selector,
+    unction (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
 
 global.$gh = gh;
 
