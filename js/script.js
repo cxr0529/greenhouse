@@ -78,7 +78,7 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-//function to load easter page
+/*//function to load easter page
 gh.loadEaster = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -136,7 +136,7 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
-};
+};*/
 
 global.$gh = gh;
 
