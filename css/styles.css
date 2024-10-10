@@ -30,12 +30,6 @@ footer{
 	text-align: center;
 }
 
-.carousel-inner .carousel-item {
-	height: 500px;
-	width: 375px;
-	margin: auto;
-}
-
 #sunshine{
 	text-align: center;
 	background-color: green;
@@ -54,10 +48,6 @@ footer{
 #offer{
 	color: orchid;
 	text-align: center;
-}
-
-#carousel{
-	margin-bottom: 15px;
 }
 
 #seasons{
@@ -152,8 +142,4 @@ footer{
 	.col-sm-10 {width: 83.33%}
 	.col-sm-11 {width: 91.66%}
 	.col-sm-12 {width: 100%}
-
-	.carousel .carousel-inner{
-		height:auto
- 	}
 }
