@@ -59,7 +59,7 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
-//function to load history page
+//function to load snippet page
 gh.loadHistory = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -76,6 +76,18 @@ gh.loadOffer = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   offer,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load snippet page
+gh.loadPage = function (page) {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  page,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
