@@ -19,6 +19,12 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   });
 });
 
+$(function setFocus() {
+                document
+                    .getElementById("#navbarToggle")
+                    .focus();
+            });
+
 (function (global) {
 
 var gh = {};
