@@ -8,12 +8,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
     }
   });
 
-  // In Firefox and Safari, the click event doesn't retain the focus
-  // on the clicked button. Therefore, the blur event will not fire on
-  // user clicking somewhere else in the page and the blur event handler
-  // which is set up above will not be called.
-  // Refer to issue #28 in the repo.
-  // Solution: force focus on the element that the click event fired on
+  // For Firefox and Safari 
   $("#navbarToggle").click(function (event) {
     $(event.target).focus();
   });
@@ -137,6 +132,18 @@ gh.loadChristmas = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   christmas,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load any page
+gh.loadPage = function (page) {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  page,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
