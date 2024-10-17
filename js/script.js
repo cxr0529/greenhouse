@@ -18,7 +18,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var gh = {};
 
-var homeHtml = "snippets/home.html";
+var home = "snippets/home.html";
 var history = "snippets/history.html";
 var offer = "snippets/offer.html";
 var easter = "snippets/easter.html";
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  homeHtml,
+  home,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
