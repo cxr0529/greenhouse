@@ -4,7 +4,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   $("#navbarToggle").blur(function (event) {
     var screenWidth = window.innerWidth;
     if (screenWidth < 992) {
-      $("#navbarNavAltMarkup").collapse('toggle');
+      $("#navbarNav").collapse('toggle');
     }
   });
 
