@@ -26,6 +26,7 @@ var spring = "snippets/spring.html";
 var summer = "snippets/summer.html";
 var fall = "snippets/fall.html";
 var christmas = "snippets/christmas.html";
+var landscaping = "snippets/landscaping.html";
 
 
 // Convenience function for inserting innerHTML for 'select'
@@ -139,8 +140,20 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
+//function to load landscaping page
+gh.loadLandscaping = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  landscaping,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
 //function to load any page
-gh.loadPage = function (page) {
+/*gh.loadPage = function (page) {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   page,
@@ -149,7 +162,7 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
-};
+};*/
 
 global.$gh = gh;
 
