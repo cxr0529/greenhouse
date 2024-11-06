@@ -21,6 +21,7 @@ var gh = {};
 var home = "snippets/home.html";
 var history = "snippets/history.html";
 var offer = "snippets/offer.html";
+var galleries = "snippets/galleries.html";
 var easter = "snippets/easter.html";
 var spring = "snippets/spring.html";
 var summer = "snippets/summer.html";
@@ -145,6 +146,18 @@ gh.loadLandscaping = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   landscaping,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load galleries page
+gh.loadGalleries = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  galleries,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
