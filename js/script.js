@@ -152,8 +152,8 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-//function to load any page
-/*gh.loadPage = function (page) {
+/*//function to load any page
+gh.loadPage = function (page) {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   page,
