@@ -28,6 +28,7 @@ var summer = "snippets/summer.html";
 var fall = "snippets/fall.html";
 var christmas = "snippets/christmas.html";
 var landscaping = "snippets/landscaping.html";
+var indoor = "snippets/indoor.html";
 
 
 // Convenience function for inserting innerHTML for 'select'
@@ -158,6 +159,18 @@ gh.loadGalleries = function () {
   showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   galleries,
+  function (responseText) {
+    document.querySelector("#main-content")
+      .innerHTML = responseText;
+  },
+  false);
+};
+
+//function to load indoor plants page
+gh.loadIndoor = function () {
+  showLoading("#main-content");
+$ajaxUtils.sendGetRequest(
+  indoor,
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;

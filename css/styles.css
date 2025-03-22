@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: green;
+	background-color: #2aea4e;
 	padding-top: 80px;
 }
 
@@ -16,6 +16,10 @@ div{
 footer{
 	background-color: skyblue;
 	text-align: center;
+}
+
+ul {
+  list-style-type: none !important;
 }
 
 .row {width: 100%;}
@@ -36,7 +40,7 @@ footer{
 	color: black;
 }
 #history{
-	background-color: skyblue;
+/*	background-color: skyblue;*/
 	text-align: center;
 }
 #designed{
@@ -46,7 +50,6 @@ footer{
 }
 
 #offer{
-	color: orchid;
 	text-align: center;
 }
 
@@ -94,6 +97,10 @@ footer{
 #landscaping {
 	text-align: center;
 	color: #694605;
+}
+
+#info {
+	padding-bottom: 15px;
 }
 
 /***Desktop***/
