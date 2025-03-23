@@ -36,13 +36,13 @@ ul {
 
 #sunshine{
 	text-align: center;
-/*	background-color: green;*/
 	color: black;
 }
+
 #history{
-/*	background-color: skyblue;*/
 	text-align: center;
 }
+
 #designed{
 	background-color: black;
 	color: ghostwhite;
@@ -51,6 +51,7 @@ ul {
 
 #offer{
 	text-align: center;
+	text-decoration: underline !important;
 }
 
 #seasons{
@@ -62,45 +63,12 @@ ul {
 	padding-top: 15px;
 }
 
-#christmas {
-	text-align: center;
-	color: #f60505;
-}
-
-#easter {
-	text-align: center;
-	color: #9386e6;
-}
-
-#fall {
-	text-align: center;
-	color: #d27300;
-}
-
-#spring {
-	text-align: center;
-	color: #7aa14c;
-}
-
-#summer {
-	text-align: center;
-}
-
 #gallery {
 	text-align: center;
 }
 
 #main-content {
 	margin-bottom: 15px;
-}
-
-#landscaping {
-	text-align: center;
-	color: #694605;
-}
-
-#info {
-	padding-bottom: 15px;
 }
 
 /***Desktop***/
